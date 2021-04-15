@@ -2061,7 +2061,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 604px;
-		background: url("../../images/banner.jpg") center top;
+		background: url("../../images/DangerCoderYTBannerAUniqueIndie0001.png") center top;
 		background-size: cover;
 		padding: 0;
 			
@@ -2074,6 +2074,12 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+	/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+	@media only screen and (max-device-width: 1366px) {
+		#header{
+	  		background-attachment: scroll;
+		}
+  	}
 
 		#header:before {
 			content: '';
@@ -2102,8 +2108,8 @@ input, select, textarea {
 			font-weight: 900;
 			text-transform: uppercase;
 			color: #fff;
-			font-size: 2em;
-			letter-spacing: 0.25em;
+			font-size: 3.25em;
+			letter-spacing: 0.15em;
 		}
 
 		#logo p {
@@ -2113,7 +2119,7 @@ input, select, textarea {
 			margin: 1.25em 0 0 0;
 			display: block;
 			letter-spacing: 0.2em;
-			font-size: 0.9em;
+			font-size: 1.3em;
 		}
 
 /* Nav */
