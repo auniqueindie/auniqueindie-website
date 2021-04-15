@@ -11,6 +11,30 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!--Paralax Image Style-->
+		<style>
+			.parallax {
+			  /* The image used */
+			  background-image: url("images/NLogofinal2.png");
+			
+			  /* Set a specific height */
+			  min-height: 297px; 
+			
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+			@media only screen and (max-device-width: 1366px) {
+  			.parallax {
+    		background-attachment: scroll;
+  			}
+		}
+		</style>
+		
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -80,9 +104,10 @@
 					<div class="container">
 
 						<!-- Image -->
-							<a href="#" class="image featured">
+							<!--<a href="#" class="feature image">
 								<img src="images/pic01.jpg" alt="" />
-							</a>
+							</a>-->
+							<div class="parallax"></div>
 
 						<!-- Features -->
 							<section id="features">
