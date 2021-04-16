@@ -4,7 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
+
 	<head>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 		<title>Home - A Unique Indie</title>
@@ -222,7 +224,7 @@
 						<header class="style1">
 							<h2>Need to contact me?</h2>
 							<p>
-								If you have any question, or want to collaborate with me,<br />
+								If you have any questions, or want to collaborate with me,<br />
 								feel free to use the form below.
 							</p>
 						</header>
@@ -231,7 +233,7 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="https://send.pageclip.co/Xgh6HH3JerpnaGAB2xUI3VTFcMM2OQWm">
+										<!--<form method="post" action="https://send.pageclip.co/Xgh6HH3JerpnaGAB2xUI3VTFcMM2OQWm">
 											<div class="row gtr-50">
 												<div class="col-6 col-12-small">
 													<input type="text" name="name" id="contact-name" placeholder="Name" />
@@ -249,7 +251,43 @@
 													</ul>
 												</div>
 											</div>
+										</form>-->
+
+										<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScqsrZQj4NeNGiLq8007PZgpTU4M8y8feOkk0MrnuUpbvflVQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="entry.1937237198" id="entry.1937237198" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="entry.346433927" id="entry.346433927" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="entry.1353936526" id="entry.1353936526" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Submit" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
 										</form>
+										<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+										<script src="assets/js/jquery.min.js"></script>
+										<script type="text/javascript">var submitted=false;</script>
+										<script type="text/javascript">
+										$('#gform').on('submit', function(e) {
+										$('#gform *').fadeOut(2000);
+										txt = $('#gform').prepend("<span id='procForm'>Your submission has been processed...</span>");
+										setTimeout(function () {
+											document.getElementById("gform").reset();
+											$('#gform *').fadeIn(500);
+											$("#procForm").remove();
+										}, 3000);
+
+										});
+										</script>
+
 									</section>
 
 							</div>
