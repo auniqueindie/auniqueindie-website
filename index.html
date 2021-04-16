@@ -266,7 +266,7 @@
 												</div>
 												<div class="col-12">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Submit" /></li>
+														<li><input  id="formRow"  type="submit" class="style1" value="Submit" /></li>
 														<li><input type="reset" class="style2" value="Reset" /></li>
 													</ul>
 												</div>
@@ -277,12 +277,14 @@
 										<script type="text/javascript">var submitted=false;</script>
 										<script type="text/javascript">
 										$('#gform').on('submit', function(e) {
-										$('#gform *').fadeOut(2000);
+											$("#formRow").toggleClass("hidden");
+										$('#gform *').animate({opacity:0, visibility:'hidden'}, 2000);
 										txt = $('#gform').prepend("<span id='procForm'>Your submission has been processed...</span>");
 										setTimeout(function () {
-											document.getElementById("gform").reset();
-											$('#gform *').fadeIn(500);
+											$("#formRow").toggleClass("hidden");
 											$("#procForm").remove();
+											document.getElementById("gform").reset();
+											$('#gform *').animate({opacity:1, visibility:'visible'}, 500)
 										}, 3000);
 
 										});
