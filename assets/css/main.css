@@ -1703,6 +1703,34 @@ input, select, textarea {
 				background-color: #d96760;
 			}
 
+			
+			input[type="button"].stylen,
+			input[type="submit"].stylen,
+			input[type="reset"].stylen,
+			button.stylen,
+			.button.stylen {
+				background: #a0a1a7 url("images/overlay.png");
+				color: #fff;
+			}
+	
+				input[type="button"].stylen:hover,
+				input[type="submit"].stylen:hover,
+				input[type="reset"].style1:hover,
+				button.stylen:hover,
+				.button.stylen:hover {
+					background-color: #606167;
+				}
+	
+				input[type="button"].stylen:active,
+				input[type="submit"].stylen:active,
+				input[type="reset"].stylen:active,
+				button.stylen:active,
+				.button.stylen:active {
+					background-color: #202127;
+				}
+
+
+
 		input[type="button"].style2,
 		input[type="submit"].style2,
 		input[type="reset"].style2,
@@ -2032,7 +2060,7 @@ input, select, textarea {
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
+				background: #fff url("images/overlay.png");;
 				color: #484d55;
 			}
 
